@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int printrandom(int,int);
+int printrandom(int min,int max){
+    int i=0;
+    while(1){
+        i+=1;
+        return rand() % (max - min + 1)*i + min;
+    } 
+}
+
+int main() {
+    int a,b,min=1,max=100;
+    a=printrandom(min,max);
+    while(1){
+        printf("enter the number : ");
+        scanf("%d",&b);
+        if(b==a)
+        break;
+        else{
+            if (b<a)
+            printf("increase the value\n");
+            else
+            printf("decrease the value\n");
+            
+        }
+        
+    }
+    printf("you won %d",b);
+    return 7;
+  
+}

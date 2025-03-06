@@ -1,0 +1,16 @@
+#include <stdio.h>
+struct user{
+    char name[100];
+    double balance;
+    int id;
+    };
+struct user user1;
+void main(){
+    char a[100];
+    double b;
+    int c;
+    struct user user1={"sumukha",40240,7};
+    printf("%d\n",user1.id);
+    printf("%s\n",user1.name);
+    printf("%lf",user1.balance);
+}
